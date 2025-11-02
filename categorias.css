@@ -1,0 +1,51 @@
+/*
+ * 1. Estilos del Contenedor (Barra Horizontal)
+ * - Ocupa todo el ancho.
+ * - Utiliza Flexbox para alinear los ítems.
+ */
+.plant-categories-container {
+    display: flex; /* Habilita Flexbox */
+    width: 100%; /* Ocupa todo el ancho de la pantalla */
+    justify-content: space-around; /* Distribuye el espacio entre los ítems */
+    align-items: center; /* Centra verticalmente */
+    padding: 15px 0; /* Espaciado interno superior e inferior */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    overflow: hidden; /* Oculta partes del fondo animado que se salgan */
+
+    /* 2. Degradado y Animación del Fondo */
+    /* Define el degradado inicial (Verde a Azul/Morado) */
+    background: linear-gradient(135deg, #68ec6d, #14ac72, #14ce14);
+    background-size: 300% 300%; /* Hace el degradado más grande para que la animación se vea suave */
+    animation: gradient-flow 15s ease infinite alternate; /* Aplica la animación */
+}
+
+/* 3. Definición de la Animación */
+@keyframes gradient-flow {
+    0% {
+        background-position: 0% 50%; /* Posición inicial del fondo */
+    }
+    100% {
+        background-position: 100% 50%; /* Posición final del fondo (crea el efecto de movimiento) */
+    }
+}
+
+/*
+ * 4. Estilos de los Ítems de Categoría (Enlaces)
+ */
+.category-item {
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    color: white; /* Color del texto */
+    font-size: 1.1em;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 25px; /* Bordes redondeados */
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Transiciones suaves para el hover */
+    text-align: center; /* Asegura que el texto esté centrado */
+    min-width: 120px; /* Ancho mínimo para que se vean bien */
+}
+
+/* 5. Efecto de Interacción (Animación al pasar el ratón) */
+.category-item:hover {
+    transform: scale(1.1); /* Agranda el ítem */
+    background-color: rgba(255, 255, 255, 0.2); /* Fondo semitransparente al pasar el ratón */
+}

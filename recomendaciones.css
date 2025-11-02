@@ -1,0 +1,111 @@
+/*
+ * 1. Estilos del Contenedor de Recomendaciones Bonus
+ * - Degradado y Animación de Fondo
+ */
+.bonus-recommendations-container {
+    width: 100%;
+    padding: 60px 20px;
+    margin-top: 40px;
+    
+    /* Degradado de Fondo: Verde Menta (#A7F3D0) a Azul Profundo (#1E3A8A) */
+    background: linear-gradient(-45deg, #A7F3D0, #198f0a);
+    background-size: 400% 400%; /* Muy grande para una animación más fluida */
+    animation: background-pulse 20s ease infinite; /* Animación de fondo lenta */
+    box-shadow: inset 0 6px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* 2. Definición de la Animación de Fondo (Lenta y Morfante) */
+@keyframes background-pulse {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.bonus-title {
+    color: white;
+    font-size: 2.2em;
+    text-align: center;
+    margin-bottom: 40px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+/* 3. Disposición de las Tarjetas en Rejilla (GRID) */
+.grid-container {
+    display: grid;
+    /* 3 columnas de igual ancho, con espacio entre ellas */
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 30px; /* Espacio entre las tarjetas */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* 4. Estilos de las Tarjetas Individuales */
+.bonus-card {
+    background-color: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-out; /* Transición para el hover */
+    border-top: 5px solid #4CAF50; /* Línea verde de acento */
+
+    /* Configuración inicial para la animación de entrada */
+    opacity: 0;
+    transform: translateY(30px);
+    animation-fill-mode: forwards;
+}
+
+.bonus-card:hover {
+    transform: translateY(-5px); /* Pequeño levantamiento al pasar el ratón */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.bonus-card h3 {
+    color: #1E3A8A; /* Título azul profundo */
+    font-size: 1.3em;
+    margin-top: 0;
+}
+
+/* 5. Definición de la Animación de Entrada (Slide Up and Fade In) */
+/* Reutilizamos el nombre 'fade-in-up' en el HTML y lo definimos aquí */
+@keyframes fade-in-up {
+    to {
+        opacity: 1;
+        transform: translateY(0); /* Sube a su posición final */
+    }
+}
+
+/* 6. Clases de Retraso para la Animación Escalonada */
+/* Continuamos la numeración para evitar conflictos con secciones anteriores */
+.delay-9 {
+    animation: fade-in-up 0.5s ease 0.1s forwards; 
+}
+.delay-10 {
+    animation: fade-in-up 0.5s ease 0.2s forwards;
+}
+.delay-11 {
+    animation: fade-in-up 0.5s ease 0.3s forwards;
+}
+.delay-12 {
+    animation: fade-in-up 0.5s ease 0.4s forwards;
+}
+.delay-13 {
+    animation: fade-in-up 0.5s ease 0.5s forwards;
+}
+.delay-14 {
+    animation: fade-in-up 0.5s ease 0.6s forwards;
+}
+
+/* 7. Media Query para pantallas más pequeñas (opcional, pero recomendado) */
+@media (max-width: 900px) {
+    .grid-container {
+        /* En pantallas más pequeñas, se convierte en 2 columnas */
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .grid-container {
+        /* En móviles, se convierte en 1 columna */
+        grid-template-columns: 1fr;
+    }
+}

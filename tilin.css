@@ -1,0 +1,14 @@
+.navbar-gradient-green-purple {
+    /* Define el degradado: de un verde esmeralda a un morado vibrante */
+    background-image: linear-gradient(to right, #1abc9c, #9b59b6);
+}
+
+/* Opcional: para que los enlaces se vean mejor */
+.navbar-gradient-green-purple .nav-link,
+.navbar-gradient-green-purple .navbar-brand {
+    color: white !important; /* Texto blanco para mejor contraste */
+}
+
+.navbar-gradient-green-purple .nav-link:hover {
+    color: #e6e6e6 !important; /* Un poco más claro al pasar el ratón */
+}

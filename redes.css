@@ -1,0 +1,115 @@
+/*
+ * 1. Estilos del Contenedor de Redes Sociales
+ */
+.social-media-container {
+    text-align: center;
+    padding: 85px 200px;
+    background-color: #E8F5E9; /* Fondo verde muy claro */
+    margin-top: 40px;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.social-title {
+    color: #388E3C; /* Verde oscuro */
+    margin-bottom: 30px;
+    font-size: 1.8em;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 25px; /* Espacio entre los iconos */
+}
+
+/* 2. Estilos y Animación de los Iconos */
+.social-icon {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 90px 90px;
+    border-radius: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    
+    /* Configuración para la animación de entrada (escala) */
+    opacity: 0;
+    transform: scale(0.8);
+    animation: bounce-in 0.6s ease forwards; /* Aplica la animación */
+    
+    /* Transición para el efecto hover */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.icon-emoji {
+    margin-right: 8px;
+    font-size: 1.5em;
+    line-height: 1; /* Asegura que el emoji esté bien alineado */
+}
+
+/* 3. Colores Verdes y Animación Hover */
+
+/* Color principal Verde esmeralda para todos los iconos */
+.social-icon {
+    background-color: #4CAF50; 
+}
+
+.social-icon:hover {
+    transform: translateY(-5px) scale(1.05); /* Se levanta y agranda al pasar el ratón */
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+    background-color: #388E3C; /* Verde más oscuro al hacer hover */
+}
+
+/* 4. Definición de la Animación de Entrada (Bounce/Scale In) */
+@keyframes bounce-in {
+    0% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    60% {
+        transform: scale(1.1);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* 5. Retrasos para la Animación Escalonada */
+/* Continuamos la numeración de los retrasos anteriores */
+.social-links .social-icon:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.social-links .social-icon:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.social-links .social-icon:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+.social-links .social-icon:nth-child(4) {
+    animation-delay: 0.4s;
+}
+
+@media(max-width:700px){
+    .social-media-container {
+     display: block;
+    justify-content: space-between; /* Separa los paneles (Izq. y Der.) */
+    width: 100%;
+    max-width: 1200px; /* Limita el ancho total para mejor lectura */
+    margin: 30px auto; /* Centra el contenedor y da margen */
+    padding: 20px;
+    gap: 30px; /* Espacio entre los dos paneles */
+}
+
+.social-links {
+    display: block;
+    justify-content: center;
+    gap: 25px; /* Espacio entre los iconos */
+    padding: 10px;
+}
+
+
+}

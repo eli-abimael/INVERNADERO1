@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú Bootstrap con Degradado</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="mision.css">   
+    <link rel="stylesheet" href="categorias.css"> 
+      <link rel="stylesheet" href="mosaicos.css">
+    <link rel="stylesheet" href="video.css">
+    <link rel="stylesheet" href="recomendaciones.css">
+    <link rel="stylesheet" href="redes.css">
+    <link rel="stylesheet" href="slider.css">
+    <link rel="stylesheet" href="pie.css">
+  
+    <style>
+        .navbar-gradient-green-purple {
+            /* Degradado de verde a morado */
+            background-image: linear-gradient(to right, #1abc9c, #9b59b6);
+        }
+
+        /* Aseguramos el texto blanco en el menú para mejor contraste */
+        .navbar-gradient-green-purple .nav-link,
+        .navbar-gradient-green-purple .navbar-brand {
+            color: white !important;
+        }
+
+        /* Estilo al pasar el ratón (hover) */
+        .navbar-gradient-green-purple .nav-link:hover {
+            color: rgba(255, 255, 255, 0.75) !important;
+        }
+    </style>
+</head>
+<body>
+
+
+
+<nav class="navbar navbar-expand-lg navbar-dark navbar-gradient-green-purple fixed-top">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">Mi Marca</a>
+        
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#ejemplo">Servicios</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#ejemplo2">Productos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#ejemplo3">Contacto</a>
+                </li>
+            </ul>
+            
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Mi Cuenta</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+
+<div class="slider-container-auto">
+    <div class="slides-auto">
+        <div class="slide-item-auto">
+            <img src="imagenes/9.jpg" alt="Planta de interior">
+        </div>
+        <div class="slide-item-auto">
+            <img src="imagenes/10.jpeg" alt="Suculenta exótica">
+        </div>
+        <div class="slide-item-auto">
+            <img src="imagenes/12.jpg" alt="Jardín botánico">
+        </div>
+        <div class="slide-item-auto">
+            <img src="imagenes/13.jpg" alt="Flores tropicales">
+        </div>
+        <div class="slide-item-auto">
+            <img src="imagenes/15.webp" alt="Árbol frutal">
+        </div>
+        <div class="slide-item-auto">
+            <img src="imagenes/14.jpg"Planta de interior">
+        </div>
+    </div>
+</div>
+
+
+
+<section class="container my-5 py-4">
+    <div class="text-center mb-5">
+        <h2 class="section-title-gradient display-5">Nuestra Esencia</h2>
+        <p class="lead text-muted">Definimos quiénes somos y a dónde vamos.</p>
+    </div>
+
+    <div class="row g-4">
+        <div class="col-md-6">
+            <div class="card card-custom p-4">
+                <div class="card-body">
+                    <h3 class="card-title text-center mb-3">
+                        <span class="section-title-gradient">Misión</span>
+                    </h3>
+                    <p class="card-text text-muted text-center">
+                        Ser la plataforma líder en soluciones digitales ecológicas, impulsando la sostenibilidad
+                        y la eficiencia a través de tecnología innovadora. Nos comprometemos a ofrecer productos
+                        de alta calidad que minimicen el impacto ambiental y maximicen el valor para nuestros clientes.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="card card-custom p-4">
+                <div class="card-body">
+                    <h3 class="card-title text-center mb-3">
+                        <span class="section-title-gradient">Visión</span>
+                    </h3>
+                    <p class="card-text text-muted text-center">
+                        Transformar el panorama tecnológico global hacia un futuro completamente verde para el año 2030,
+                        convirtiéndonos en el referente mundial de innovación con responsabilidad social y ambiental.
+                        Buscamos un mundo donde la tecnología y la naturaleza coexistan en armonía.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<section class="container my-5 py-4">
+    <div class="text-center mb-5">
+        <h2 class="section-title-gradient display-5">Explora Nuestras Categorías</h2>
+        <p class="lead text-muted">Encuentra la planta perfecta para tu hogar o jardín.</p>
+    </div>
+
+
+<div class="plant-categories-container" id="ejemplo">
+    <a href="#suculentas" class="category-item">Suculentas 🌵</a>
+    <a href="#arboles" class="category-item">Árboles 🌳</a>
+    <a href="#flores" class="category-item">Flores 🌸</a>
+    <a href="#acuaticas" class="category-item">Acuáticas 💧</a>
+    <a href="#frutales" class="category-item">Frutales 🍎</a>
+</div>
+
+
+
+<div class="content-section-container" id="ejemplo2">
+    <div class="recommendations-panel">
+        <h2 class="panel-title">🌿 Consejos Rápidos de Cuidado</h2>
+        <div class="tip-card">
+            <h3>Riego 💧</h3>
+            <p>Toca la tierra. Si está seca a 2cm de profundidad, ¡es hora de regar!</p>
+        </div>
+        <div class="tip-card delay-1">
+            <h3>Luz ☀️</h3>
+            <p>Asegúrate de que reciba la luz adecuada para su especie. ¡Demasiada quema!</p>
+        </div>
+        <div class="tip-card delay-2">
+            <h3>Nutrientes 🌱</h3>
+            <p>Fertiliza en primavera y verano. Usa un abono equilibrado y orgánico.</p>
+        </div>
+    </div>
+
+    <div class="video-panel">
+        <h2 class="panel-title">📺 Video Destacado: Primeros Auxilios para Plantas</h2>
+        <div class="video-wrapper">
+            <iframe
+                src="https://www.youtube.com/embed/5qJ_H1p8V0g?rel=0"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+            </iframe>
+        </div>
+    </div>
+</div>
+
+
+<div class="bonus-recommendations-container">
+    <h2 class="bonus-title">🔍 6 Consejos Avanzados para el Cuidado Botánico</h2>
+
+    <div class="grid-container">
+        <div class="bonus-card fade-in-up delay-9">
+            <h3>1. El Trasplante Oportuno</h3>
+            <p>Solo trasplanta cuando la planta lo pida: cuando las raíces salgan por los agujeros de drenaje o la planta se seque demasiado rápido. Elige una maceta que sea solo 2-5 cm más grande que la anterior. Trasplantar en invierno o usar una maceta gigante puede causar pudrición de raíz.</p>
+        </div>
+
+        <div class="bonus-card fade-in-up delay-10">
+            <h3>2. Control de Plagas Natural</h3>
+            <p>Antes de recurrir a químicos, intenta soluciones orgánicas. El jabón insecticida o el aceite de neem diluido en agua son muy efectivos contra la mayoría de las plagas comunes (araña roja, cochinilla). Aplica cada 5-7 días hasta erradicarlas y no al sol directo.</p>
+        </div>
+
+        <div class="bonus-card fade-in-up delay-11">
+            <h3>3. La Poda Sanitaria</h3>
+            <p>Poda las hojas amarillas, marrones o muertas de inmediato. Esto no solo mejora la apariencia, sino que evita que la planta gaste energía intentando salvar hojas condenadas. Una poda ligera también estimula el crecimiento de nuevas ramas laterales.</p>
+        </div>
+
+        <div class="bonus-card fade-in-up delay-12">
+            <h3>4. Dormancia Invernal</h3>
+            <p>Muchas plantas de interior entran en dormancia en otoño/invierno. Reduce drásticamente el riego y suspende la fertilización. Forzarlas a crecer en esta etapa, cuando la luz es limitada, resulta en un crecimiento débil y alargado (etiolación).</p>
+        </div>
+
+        <div class="bonus-card fade-in-up delay-13">
+            <h3>5. Agua de Calidad</h3>
+            <p>Si notas manchas blancas o depósitos de sal en tu tierra o maceta, es por los minerales del agua del grifo. Si es posible, utiliza agua de lluvia o agua destilada, o deja reposar el agua del grifo en un cubo abierto durante 24 horas para que se evapore parte del cloro.</p>
+        </div>
+
+        <div class="bonus-card fade-in-up delay-14">
+            <h3>6. El Arte de la Propagación</h3>
+            <p>Muchas plantas se pueden multiplicar fácilmente por esquejes de tallo o de hoja. Corta con una herramienta limpia un trozo del tallo con un nudo, déjalo secar un par de horas y ponlo en agua o sustrato húmedo. ¡Duplica tu colección gratis!</p>
+        </div>
+    </div>
+</div>
+
+<div class="gallery-scroll-container">
+    <h2 class="gallery-scroll-title">🖼️ Galería de imagenes</h2>
+    <div class="scroll-wrapper">
+        <div class="scroll-item">
+            <img src="imagenes/1.jpg" alt="Planta 1">
+        </div>
+        <div class="scroll-item">
+            <img src="imagenes/2.jpg" alt="Planta 2">
+        </div>
+        <div class="scroll-item">
+            <img src="imagenes/3.jpg" alt="Planta 3">
+        </div>
+        <div class="scroll-item">
+            <img src="imagenes/5.jpg" alt="Planta 4">
+        </div>
+        <div class="scroll-item">
+            <img src="imagenes/6.jpg" alt="Planta 5">
+        </div>
+        <div class="scroll-item">
+            <img src="imagenes/7.jpg" alt="Planta 6">
+        </div>
+        <div class="scroll-item">
+            <img src="imagenes/8.jpg" alt="Planta 7">   
+    </div>
+</div>
+
+
+<div class="social-media-container" id="ejemplo3">
+    <h2 class="social-title">Sigue a nuestra comunidad 💚</h2>
+
+    <div class="social-links">
+        <a href="https://www.facebook.com/tupagina" target="_blank" class="social-icon facebook">
+            <span class="icon-emoji">📘</span> Facebook
+        </a>
+
+        <a href="https://www.instagram.com/tuperfil" target="_blank" class="social-icon instagram">
+            <span class="icon-emoji">📸</span> Instagram
+        </a>
+
+        <a href="https://www.twitter.com/tuusuario" target="_blank" class="social-icon twitter">
+            <span class="icon-emoji">🐦</span> Twitter / X
+        </a>
+
+        <a href="https://www.pinterest.com/tucuenta" target="_blank" class="social-icon pinterest">
+            <span class="icon-emoji">📍</span> Pinterest
+        </a>
+    </div>
+</div>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

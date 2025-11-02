@@ -1,0 +1,84 @@
+/*
+ * 1. Estilos del Pie de Página (Footer)
+ */
+.site-footer {
+    width: 100%; /* Ocupa todo el ancho */
+    background-color: #388E3C; /* Verde oscuro, coherente con tus iconos */
+    color: white;
+    padding: 40px 20px 20px; /* Espaciado interno: arriba/abajo/lados */
+    box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.2); /* Sombra hacia arriba */
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around; /* Distribuye el espacio entre las secciones */
+    max-width: 1200px; /* Limita el ancho del contenido interno */
+    margin: 0 auto;
+    flex-wrap: wrap; /* Permite que las secciones bajen en pantallas pequeñas */
+}
+
+.footer-section {
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom: 20px;
+}
+
+.footer-section h3 {
+    color: #C8E6C9; /* Verde muy claro para los títulos */
+    margin-bottom: 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    padding-bottom: 5px;
+}
+
+.footer-section p {
+    font-size: 0.9em;
+    line-height: 1.5;
+}
+
+/* 2. Estilos de los Enlaces */
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li a {
+    color: #E8F5E9; /* Verde claro para los enlaces */
+    text-decoration: none;
+    line-height: 2;
+    transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+    color: #FFC107; /* Un toque de amarillo/dorado al pasar el ratón */
+}
+
+/* 3. Iconos Sociales en el Footer */
+.social-icons-footer {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.footer-social-link {
+    color: white;
+    font-size: 1.5em;
+    text-decoration: none;
+    /* Animación de giro al pasar el ratón */
+    transition: transform 0.3s ease, color 0.3s ease;
+    display: inline-block; /* Necesario para que el transform funcione */
+}
+
+.footer-social-link:hover {
+    color: #4CAF50; /* Cambia a un verde brillante en hover */
+    transform: rotate(10deg) scale(1.1); /* Ligero giro y aumento */
+}
+
+/* 4. Estilos de la Parte Inferior */
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    margin-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: 0.85em;
+    color: #C8E6C9;
+}

@@ -1,0 +1,83 @@
+/*
+ * 1. Estilos del Contenedor Principal
+ */
+.gallery-scroll-container {
+    padding: 40px 0;
+    background-color: #f7f7f7;
+    text-align: center;
+}
+
+.gallery-scroll-title {
+    color: #4CAF50; /* Verde */
+    margin-bottom: 20px;
+    font-size: 1.8em;
+}
+
+/*
+ * 2. Contenedor del Desplazamiento (Scroll Bar)
+ */
+.scroll-wrapper {
+    display: flex;
+    /* CLAVE: Esto fuerza el desplazamiento horizontal si el contenido es demasiado ancho */
+    overflow-x: auto; 
+    /* Opcional: Oculta la barra de desplazamiento en algunos navegadores (manteniendo la funcionalidad) */
+    /* -ms-overflow-style: none; /* IE and Edge */
+    /* scrollbar-width: none; /* Firefox */
+    
+    padding: 10px 20px; /* Espacio para que la barra no se pegue a los bordes */
+    gap: 15px; /* Espacio entre los ítems */
+    /* Comportamiento al deslizar (opcional, para un desplazamiento más suave) */
+    scroll-snap-type: x mandatory; 
+}
+
+/* Si quieres que la barra de desplazamiento sea visible en todos los navegadores,
+   puedes omitir las propiedades comentadas arriba. */
+
+
+/* * 3. Estilos de los Ítems de Imagen 
+ */
+.scroll-item {
+    /* CLAVE: Evita que las imágenes se encojan para caber en la fila */
+    flex-shrink: 0; 
+    width: 300px; /* Ancho fijo para cada imagen */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    /* Opcional: Ayuda al desplazamiento suave */
+    scroll-snap-align: start; 
+    transition: transform 0.3s ease;
+}
+
+.scroll-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Animación y efecto (Hover) */
+.scroll-item:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+htmlñ{
+    scroll-behavior: smooth;
+
+}

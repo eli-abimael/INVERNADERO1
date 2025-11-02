@@ -1,0 +1,28 @@
+/* MISMO DEGRADADO DEL MENÚ */
+.navbar-gradient-green-purple {
+    background-image: linear-gradient(to right, #1abc9c, #9b59b6);
+}
+
+/* CLASE ESPECÍFICA PARA EL TEXTO Y FONDO DE LA SECCIÓN */
+.section-title-gradient {
+    /* Degradado de verde a morado, pero lo aplicamos al texto */
+    background-image: linear-gradient(to right, #1abc9c, #9b59b6);
+    /* Estas propiedades son clave para aplicar el degradado solo al texto */
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    /* Para que el texto se vea en negrita y resalte */
+    font-weight: 700;
+}
+
+/* Estilo para las tarjetas (cards) para darles un aspecto limpio */
+.card-custom {
+    border: none;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card-custom:hover {
+    transform: translateY(-5px);
+}
